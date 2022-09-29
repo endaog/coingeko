@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Coin list renders the loader when no content exists 1`] = `
+<DocumentFragment>
+  <section
+    class="main__container"
+  >
+    <div
+      class="loader"
+    >
+      Loading...
+    </div>
+  </section>
+</DocumentFragment>
+`;

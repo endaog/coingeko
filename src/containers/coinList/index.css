@@ -1,0 +1,105 @@
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 2rem 0;
+  color: #00427e;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 0.1rem solid #ddd;
+  padding: 0.35rem;
+  cursor: pointer;
+}
+
+table th,
+table td {
+  padding: 0.625rem;
+  text-align: center;
+}
+
+table td img {
+  margin: 0 auto;
+  height: 4rem;
+  width: 4rem;
+}
+
+table th {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+table tr:hover {
+  background: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 2.4rem;
+  }
+
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 0.1rem;
+    margin: -1rem;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 0.1rem;
+  }
+
+  table thead td:first-child {
+    display: none;
+  }
+
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625rem;
+  }
+
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 1.4rem;
+    text-align: right;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  table td:first-of-type:before {
+    display: none;
+  }
+
+  table td img {
+    margin: 0 auto;
+    height: initial;
+    width: initial;
+    display: flex;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
