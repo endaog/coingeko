@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/coingeko/static/css/main.a3cadba8.css",
+    "main.js": "/coingeko/static/js/main.222e30d2.js",
+    "index.html": "/coingeko/index.html",
+    "main.a3cadba8.css.map": "/coingeko/static/css/main.a3cadba8.css.map",
+    "main.222e30d2.js.map": "/coingeko/static/js/main.222e30d2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3cadba8.css",
+    "static/js/main.222e30d2.js"
+  ]
+}
