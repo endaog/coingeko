@@ -10,6 +10,11 @@ Simple table that collapses on Mobile
 
 Used Prettier to tidy code (default rules)
 
+## Install
+
+yarn 
+
+
 ## Available Scripts
 
 ### `yarn start`

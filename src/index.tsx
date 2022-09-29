@@ -1,7 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 import { Provider } from "react-redux"
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { HashRouter, Route, Routes } from "react-router-dom"
 import "./index.css"
 import store from "./store"
 import { CoinList } from "./containers/coinList"
@@ -12,12 +12,12 @@ const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
 root.render(
   <>
     <Provider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<CoinList />} />
           <Route path="/details/:id" element={<CoinDetails />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </Provider>
   </>
 )
