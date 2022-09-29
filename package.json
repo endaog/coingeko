@@ -25,8 +25,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:fix": "eslint --fix --ext .ts,.tsx .",
-    "format": "prettier --write \"**/*.+(ts|tsx|json|css|md)\""
+    "format": "prettier --write \"**/*.+(ts|tsx|json|css|md)\"",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "https://endaog.github.io/coingeko/",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -58,6 +61,7 @@
     "@types/react-redux": "^7.1.24",
     "@types/redux-logger": "^3.0.9",
     "@types/redux-saga": "^0.10.5",
+    "gh-pages": "^4.0.0",
     "prettier": "^2.7.1",
     "redux-logger": "^3.0.6"
   }
